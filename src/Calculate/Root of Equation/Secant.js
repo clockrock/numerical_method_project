@@ -4,14 +4,8 @@ import '../../screen.css';
 import 'antd/dist/antd.css';
 import { error, func } from '../../services/Services';
 import Graph from '../../components/Graph';
+import {InputStyle,colorBg} from '../../components/inputStyle';
 
-const InputStyle = {
-    background: "#1890ff",
-    color: "white",
-    fontWeight: "bold",
-    fontSize: "24px"
-
-};
 var dataInTable = []
 const columns = [
     {
@@ -102,7 +96,7 @@ class Secant extends Component {
                     <div className="col">
                         <Card
                             bordered={true}
-                            style={{ background: "gray", borderRadius:"15px", color: "#FFFFFFFF" }}
+                            style={{ colorBg, borderRadius:"15px", color: "#FFFFFFFF" }}
                             onChange={this.handleChange}
                         >
                             <h2>f(x)</h2><Input size="large" name="fx" style={InputStyle}></Input>

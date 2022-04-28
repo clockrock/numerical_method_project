@@ -4,15 +4,8 @@ import '../../screen.css';
 import 'antd/dist/antd.css';
 import Graph from '../../components/Graph';
 import { func } from '../../services/Services';
+import {InputStyle,colorBg} from '../../components/inputStyle';
 
-
-const InputStyle = {
-    background: "#1890ff",
-    color: "white",
-    fontWeight: "bold",
-    fontSize: "24px"
-
-};
 var dataInTable;
 const columns = [
     {
@@ -93,7 +86,7 @@ class Graphical extends Component {
                 <div className="row">
                     <div className="col">
                         <Card
-                            style={{ background: "gray", color: "#FFFFFFFF", borderRadius:"10px" }}
+                            style={{ colorBg, color: "#FFFFFFFF", borderRadius:"10px" }}
                             onChange={this.handleChange}
                         >
                             <h4>f(x)</h4><Input size="large" name="fx" style={InputStyle}></Input>

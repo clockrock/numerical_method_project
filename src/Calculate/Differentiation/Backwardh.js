@@ -3,13 +3,8 @@ import { Card, Input, Button } from 'antd';
 import '../../screen.css';
 import 'antd/dist/antd.css';
 import { func, funcDiffDegreeN } from '../../services/Services';
+import {InputStyle,colorBg} from '../../components/inputStyle';
 
-const InputStyle = {
-    background: "white",
-    color: "white",
-    fontWeight: "bold",
-    fontSize: "24px"
-};
 var y, error, exact;
 class Backwardh extends Component {
     constructor() {
@@ -59,7 +54,7 @@ class Backwardh extends Component {
                     <div className="col">
                         <Card
                             bordered={true}
-                            style={{ background: "gray", borderRadius:"15px", color: "#FFFFFFFF" }}
+                            style={{colorBg, borderRadius:"15px", color: "#FFFFFFFF" }}
                             onChange={this.handleChange}
                             id="inputCard"
                         >

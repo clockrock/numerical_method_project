@@ -3,14 +3,8 @@ import { Card, Input, Button } from 'antd';
 import '../../screen.css';
 import 'antd/dist/antd.css';
 import { exactIntegrate, func } from '../../services/Services';
+import {InputStyle,colorBg} from '../../components/inputStyle';
 
-const InputStyle = {
-    background: "#1890ff",
-    color: "white",
-    fontWeight: "bold",
-    fontSize: "24px"
-
-};
 var I, exact, error;
 
 class Composite_Trapezoidal extends Component {
@@ -59,7 +53,7 @@ class Composite_Trapezoidal extends Component {
                     <div className="col">
                         <Card
                             bordered={true}
-                            style={{ background: "gray", borderRadius:"15px", color: "#FFFFFFFF" }}
+                            style={{ colorBg, borderRadius:"15px", color: "#FFFFFFFF" }}
                             onChange={this.handleChange}
                             id="inputCard"
                         >

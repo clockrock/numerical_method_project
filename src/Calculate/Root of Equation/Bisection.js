@@ -4,14 +4,8 @@ import '../../screen.css';
 import 'antd/dist/antd.css';
 import { error, func, getXL_XR_from_API } from '../../services/Services';
 import Graph from '../../components/Graph';
+import {InputStyle,colorBg} from '../../components/inputStyle';
 
-const InputStyle = {
-    background: "#1890ff",
-    color: "white",
-    fontWeight: "bold",
-    fontSize: "24px"
-
-};
 var dataInTable = []
 const columns = [
     {
@@ -154,13 +148,13 @@ class Bisection extends Component {
                     <div className="col">
                         <Card
                             bordered={true}
-                            style={{ background: "gray", borderRadius:"15px", color: "#FFFFFFFF" }}
+                            style={{  colorBg, borderRadius:"15px", color: "#FFFFFFFF" }}
                             onChange={this.handleChange}
                             id="inputCard"
                         >
-                            <h2 style={{color:"white"}}>f(x)</h2><Input size="large" name="fx" style={InputStyle}></Input>
-                            <h2 style={{color:"white"}}>X<sub>L</sub></h2><Input size="large" name="xl" style={InputStyle}></Input>
-                            <h2 style={{color:"white"}}>X<sub>R</sub></h2><Input size="large" name="xr" style={InputStyle}></Input><br /><br />
+                            <h2 style={{color:"black"}}>f(x)</h2><Input size="large" name="fx" style={InputStyle}></Input>
+                            <h2 style={{color:"black"}}>X<sub>L</sub></h2><Input size="large" name="xl" style={InputStyle}></Input>
+                            <h2 style={{color:"black"}}>X<sub>R</sub></h2><Input size="large" name="xr" style={InputStyle}></Input><br /><br />
                             <div className="row">
                                 <div className="col-3">
                                     <Button id="submit_button" onClick={

@@ -2,14 +2,7 @@ import React, { Component } from 'react'
 import { Card, Input, Button } from 'antd';
 import '../../screen.css';
 import 'antd/dist/antd.css';
-
-const InputStyle = {
-    background: "#1890ff",
-    color: "white",
-    fontWeight: "bold",
-    fontSize: "24px"
-
-};
+import {InputStyle,colorBg} from '../../components/inputStyle';
 
 var A = [], B = [], matrixA = [], matrixB = [], output = []
 class Jordan extends Component {
@@ -144,7 +137,7 @@ class Jordan extends Component {
                     <div className="col">
                         <Card
                             bordered={true}
-                            style={{ width: 400, background: "gray", borderRadius:"15px", color: "#FFFFFFFF" }}
+                            style={{ width: 400, colorBg, borderRadius:"15px", color: "#FFFFFFFF" }}
                             onChange={this.handleChange}
                         >
 

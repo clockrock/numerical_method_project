@@ -3,14 +3,8 @@ import { Card, Input, Button, Table } from 'antd';
 import '../../screen.css';
 import 'antd/dist/antd.css';
 import { lusolve, round, squeeze } from 'mathjs';
+import {InputStyle,colorBg} from '../../components/inputStyle';
 
-const InputStyle = {
-    background: "#1890ff",
-    color: "white",
-    fontWeight: "bold",
-    fontSize: "24px"
-
-};
 var columns = [
     {
         title: "No.",
@@ -174,7 +168,7 @@ class MultipleLinear extends Component {
                     <div className="col">
                         <Card
                             bordered={true}
-                            style={{ background: "gray", borderRadius:"15px", color: "#FFFFFFFF" }}
+                            style={{ colorBg, borderRadius:"15px", color: "#FFFFFFFF" }}
                             onChange={this.handleChange}
                         >
                             {this.state.showInputForm &&

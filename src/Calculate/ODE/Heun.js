@@ -4,14 +4,8 @@ import '../../screen.css';
 import 'antd/dist/antd.css';
 import Graph from '../../components/Graph';
 import { func } from '../../services/Services';
+import {InputStyle,colorBg} from '../../components/inputStyle';
 
-const InputStyle = {
-    background: "#1890ff",
-    color: "white",
-    fontWeight: "bold",
-    fontSize: "24px"
-
-};
 var dataInTable;
 const columns = [
     {
@@ -89,7 +83,7 @@ class Heun extends Component {
                     <div className="col">
                         <Card
                             bordered={true}
-                            style={{ background: "gray", borderRadius:"15px", color: "#FFFFFFFF" }}
+                            style={{ colorBg, borderRadius:"15px", color: "#FFFFFFFF" }}
                             onChange={this.handleChange}
                             id="inputCard"
                         >

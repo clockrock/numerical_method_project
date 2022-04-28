@@ -3,13 +3,7 @@ import { Card, Input, Button } from 'antd';
 import '../../screen.css';
 import 'antd/dist/antd.css';
 import { lusolve, format } from 'mathjs';
-const InputStyle = {
-    background: "#1890ff",
-    color: "white",
-    fontWeight: "bold",
-    fontSize: "24px"
-
-};
+import {InputStyle,colorBg} from '../../components/inputStyle';
 
 var A = [], B = [], matrixA = [], matrixB = [], output = [], decompose;
 class LU extends Component {
@@ -107,7 +101,7 @@ class LU extends Component {
                     <div className="col">
                         <Card
                             bordered={true}
-                            style={{ background: "gray", borderRadius:"15px", color: "#FFFFFFFF" }}
+                            style={{ colorBg, borderRadius:"15px", color: "#FFFFFFFF" }}
                             onChange={this.handleChange}
                         >
 

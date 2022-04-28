@@ -3,14 +3,7 @@ import { Card, Input, Button } from 'antd';
 import { det } from 'mathjs';
 import '../../screen.css';
 import 'antd/dist/antd.css';
-
-const InputStyle = {
-    background: "#1890ff",
-    color: "white",
-    fontWeight: "bold",
-    fontSize: "24px"
-
-};
+import {InputStyle,colorBg} from '../../components/inputStyle';
 
 
 var A = [], B = [], answer = [], matrixA = [], matrixB = []
@@ -120,7 +113,7 @@ class Cramer extends Component {
                     <div className="col">
                         <Card
                             bordered={true}
-                            style={{ background: "gray", borderRadius:"15px", color: "#FFFFFFFF" }}
+                            style={{ colorBg, borderRadius:"15px", color: "#FFFFFFFF" }}
                             onChange={this.handleChange}
                         >
 

@@ -57,7 +57,7 @@ class App extends Component {
           <Sider width={335} style={{ background: "#fff" }}>
               <Menu
                 mode="inline"
-                style={{ height: '90vh', borderRight: 0, backgroundColor: "#9BD3DD", overflowY: "scroll" }}
+                style={{ height: '90vh', paddingTop:"50px", borderRight: 0, backgroundColor: "#9BD3DD", overflowY: "scroll" }}
                 theme="light"
               >
                 <SubMenu key="root_submenu" title={<span>Root of Equation</span>}>
@@ -101,11 +101,11 @@ class App extends Component {
                   <Menu.Item key="menu_backward2h"><Link to="/backwardh2">Backward Divided-Differences O(h{<sup>2</sup>})</Link></Menu.Item>
                   <Menu.Item key="menu_central2h"><Link to="/centralh2">Central Divided-Differences O(h{<sup>4</sup>})</Link></Menu.Item>
                 </SubMenu>
-                <SubMenu key="de_submenu" title={<span>Ordinary Differential Equation</span>}>
+                {/* <SubMenu key="de_submenu" title={<span>Ordinary Differential Equation</span>}>
                   <Menu.Item key="menu_euler"><Link to="/euler">Euler's Method</Link></Menu.Item>
                   <Menu.Item key="menu_heun"><Link to="/heun">Heun's Method</Link></Menu.Item>
                   <Menu.Item key="menu_modifier"><Link to="/modifier-euler">Modifier Euler's Method</Link></Menu.Item>
-                </SubMenu>
+                </SubMenu> */}
               </Menu>
             </Sider>
             
@@ -159,7 +159,7 @@ class App extends Component {
             <p style={{ fontSize: "20px", fontWeight: "bold", color: "white" }}>
               © All Right Reserved<br />
 
-              <p style={{fontSize:"22px", verticalAlign:"text-bottom"}}><BookFilled style={{ fontSize: "30px" }} /><a target="_blank" rel="noopener noreferrer" href="http://cs.kmutnb.ac.th/" style={{ color: "white", textDecoration: "none" }}> Department of Computer and Information Science - King Mongkut's University of Technology North Bangkok</a></p>
+              <p style={{fontSize:"22px", verticalAlign:"text-bottom"}}><BookFilled style={{ fontSize: "30px" }} /><a target="_blank" rel="noopener noreferrer" href="http://cs.kmutnb.ac.th/" style={{ color: "white", textDecoration: "none" }}>Made by Nattachai Supharojanee</a></p>
 
             </p>
 
