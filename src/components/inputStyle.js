@@ -1,6 +1,5 @@
 const InputStyle = {
     background: "white",
-    color: "white",
     fontWeight: "bold",
     fontSize: "24px",
     borderColor:"black"
